@@ -1,5 +1,7 @@
 # CPP-solver
-CityStrides running route optimizer using Chinese Postman Problem Solver - my senior project
+CityStrides running route optimizer using Chinese Postman Problem Solver
+
+Taking an old Chinese Postman Solver plugin in QGIS, provided here: https://github.com/rkistner/chinese-postman by user rkistner, and updating the packages used so that it works again, and adapting it to road networks to use on CityStrides (https://citystrides.com/about). CityStrides is a website that syncs with popular run-tracking applications to gamify running. Tracks the amount of streets a user has ran and percentage of streets run in different cities. Full community with leaderboard. This uses the CPP solver to optimize routing for CityStrides to get the most streets in the least distance possible.
 
 Steps for using:
 1. Download QGIS if not already installed
@@ -25,4 +27,7 @@ out body;
 10. Go to plugins, and run the Chinese Postman Solver on the selected area
 11. Optimal path and distance are outputted, path can be exported as a csv or gpx file to use elsewhere if wanted.
 
+Future Improvements:
 
+1. Automate these steps in a script where only input is Town Name and then polygon selection
+2. better way to visualize path once it has been outputted (currently entire street network just gets highlighted, hard to tell what is doubled and what isn't)
